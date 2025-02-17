@@ -8,7 +8,7 @@ O **Task Manager** é um sistema de **gerenciamento de tarefas** onde os usuári
 ## 🚀 **Funcionalidades**
 - 📋 **Listagem de tarefas** em cards organizados
 - 🔍 **Filtragem** por status (Pendente, Em Andamento, Concluído)
-- 🔄 **Ordenação** das tarefas (ID, Título, Data)
+- 🔄 **Ordenação** das tarefas (Título, Data)
 - ➕ **Criação de tarefas** em um modal
 - ✏️ **Edição de tarefas** diretamente no modal
 - ❌ **Exclusão de tarefas**
@@ -28,5 +28,5 @@ Antes de rodar o frontend, você precisa ter instalado:
 ## 📦 **Instalação**
 1️⃣ Clone o repositório do frontend:
    ```sh
-   git clone https://github.com/seu-usuario/task-manager-frontend.git
+   git clone https://github.com/Teles23/taskmanager-frontend
    cd task-manager-frontend
