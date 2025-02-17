@@ -9,7 +9,7 @@ export default function AllRoutes() {
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} /> {/* ✅ Nova Rota */}
+        <Route path="/register" element={<Register />} />
         <Route
           path="/tasks"
           element={
