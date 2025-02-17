@@ -8,8 +8,18 @@ export const getTasksByUser = async (token: string, userId: number) => {
   });
 };
 
-export const getTasks = async (id: number) => {
-  return api.get(`${API_URL}${id}`);
+export const getTasks = async (
+  userId: number,
+  status?: string,
+  sortBy: string = "id",
+  order: string = "asc"
+) => {
+  let url = `${API_URL}${userId}?sortBy=${sortBy}&order=${order}`;
+  if (status) {
+    url += `&status=${status}`;
+  }
+
+  return api.get(url);
 };
 
 export const createTask = async (

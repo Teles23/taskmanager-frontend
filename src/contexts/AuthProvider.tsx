@@ -1,5 +1,5 @@
 import { useState, useEffect, ReactNode } from "react";
-import { AuthContext } from "./AuthContext";
+import AuthContext from "./AuthContext";
 import { jwtDecode } from "jwt-decode";
 
 interface AuthProviderProps {

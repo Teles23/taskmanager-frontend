@@ -1,9 +1,8 @@
 import { useState, useContext } from "react";
-import api from "../services/api";
+import api from "../../services/api";
 import { useNavigate } from "react-router-dom";
-import { AuthContext } from "../contexts/AuthContext";
-import "./Auth.css"; // ✅ Importamos o CSS unificado para login e cadastro
-import loginIllustration from "../assets/react.svg"; // ✅ Ilustração para a tela de login
+import AuthContext from "../../contexts/AuthContext";
+import "./login.css"; // ✅ Importamos o CSS unificado para login e cadastro
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -34,16 +33,14 @@ const Login = () => {
       auth.login(token);
       navigate("/tasks");
     } catch (err) {
-      setError("Usuário ou senha incorretos." + err);
+      setError("Usuário ou senha incorretos.");
     }
   };
 
   return (
     <div className="auth-container">
       <div className="auth-box">
-        <div className="auth-left">
-          <img src={loginIllustration} alt="Login Ilustração" />
-        </div>
+        <div className="auth-left"></div>
         <div className="auth-right">
           <h2>Task Manager</h2>
           <p className="subtitle">

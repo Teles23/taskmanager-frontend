@@ -5,6 +5,8 @@ export const registerUser = async (userData: {
   email: string;
   password: string;
 }) => {
-  console.log(userData);
   return api.post("users", userData);
+};
+export const getUserById = async (userId: number) => {
+  return api.get(`users/${userId}`);
 };

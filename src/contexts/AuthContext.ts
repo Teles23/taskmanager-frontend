@@ -1,14 +1,5 @@
 import { createContext } from "react";
+import { AuthContextType } from "../utils/authContextType";
 
-export interface AuthContextType {
-  token: string | null;
-  userId: number | null;
-  login: (token: string) => void;
-  logout: () => void;
-  isAuthenticated: boolean;
-}
-
-// ✅ Apenas define o contexto, sem lógica de estado
-export const AuthContext = createContext<AuthContextType | undefined>(
-  undefined
-);
+const AuthContext = createContext<AuthContextType | undefined>(undefined);
+export default AuthContext;
